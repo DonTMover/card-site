@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    # volumes:
+    #   - ./public:/usr/share/nginx/html    # только если хотите монтировать готовую сборку для отладки

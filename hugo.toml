@@ -1,3 +1,20 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://dontmover.ru/"
+languageCode = "ru-ru"
+title = "Мой сайт на Hugo"
+theme = "ananke"
+paginate = 10
+
+[params]
+  author = "Egor"
+
+[menu]
+
+  [[menu.main]]
+    name = "Главная"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Блог"
+    url = "/posts/"
+    weight = 2
