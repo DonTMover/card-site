@@ -1,5 +1,13 @@
-FROM klakegg/hugo:ext AS builder
+FROM node:18-alpine AS nodebuilder
 WORKDIR /src
+COPY package.json package-lock.json ./
+RUN npm ci --no-audit --no-fund --silent || true
+
+FROM klakegg/hugo:0.150.1-ext AS builder
+WORKDIR /src
+
+# copy node_modules from node stage so Hugo's PostCSS/Tailwind can run via Hugo Pipes
+COPY --from=nodebuilder /src/node_modules ./node_modules
 
 COPY . .
 RUN hugo --minify
