@@ -1,20 +1,18 @@
 baseURL = "https://dontmover.ru/"
 languageCode = "ru-ru"
 title = "Мой сайт на Hugo"
-theme = "ananke"
-paginate = 10
+theme = "aafu"
 
 [params]
-  author = "Egor"
+  author = "Ваше имя"
+  description = "Краткое описание сайта"
+  [params.theme]
+    mainTheme = "dark"  # "light", "dark" или null
 
-[menu]
+[params.profile]
+  name = "Имя Фамилия"
+  tagline = "Краткий титул"
+  location = "Город, Страна"
+  photo = "images/profile.jpg"
 
-  [[menu.main]]
-    name = "Главная"
-    url = "/"
-    weight = 1
-
-  [[menu.main]]
-    name = "Блог"
-    url = "/posts/"
-    weight = 2
+showAttribute = true
