@@ -1,18 +1,129 @@
 baseURL = "https://dontmover.ru/"
 languageCode = "ru-ru"
-title = "Мой сайт на Hugo"
+title = "DonTMover"
 theme = "aafu"
 
 [params]
-  author = "Ваше имя"
-  description = "Краткое описание сайта"
+  author = "DonTMover"
+  description = "Личный профиль и портфолио"
+  showAttribute = true
+  singlePage = false
+
   [params.theme]
-    mainTheme = "dark"  # "light", "dark" или null
+    mainTheme = "light"  # default light; theme supports switching
 
-[params.profile]
-  name = "Имя Фамилия"
-  tagline = "Краткий титул"
-  location = "Город, Страна"
-  photo = "images/profile.jpg"
+  [params.profile]
+    name = "DonTMover"
+    tagline = "BackEnd Developer, Linux enjoyer"
+    location = "Gomel, Belarus"
+  photo = "profile.jpg"
 
-showAttribute = true
+  [params.social]
+    title = "Links"
+    [[params.social.list]]
+      icon = "ai ai-discord"
+      url = "#"
+      title = "discord: dontmover"
+    [[params.social.list]]
+      icon = "ai ai-telegram"
+      url = "https://t.me/dontmover"
+      title = "Telegram"
+    [[params.social.list]]
+      icon = "ai ai-mail"
+      url = "mailto:dontmover@duck.com"
+      title = "Email"
+    [[params.social.list]]
+      icon = "ai ai-mastodon"
+      url = "https://shitpost.poridge.club/@dontmover"
+      title = "Mastodon"
+
+  [[params.showInAccordion]]
+    item = "aboutme"
+    expand = true
+  [[params.showInAccordion]]
+    item = "experience"
+  [[params.showInAccordion]]
+    item = "education"
+  [[params.showInAccordion]]
+    item = "publication"
+  [[params.showInAccordion]]
+    item = "project"
+  [[params.showInAccordion]]
+    item = "skill"
+  [[params.showInAccordion]]
+    item = "hobby"
+
+  [params.aboutme]
+    title = "About Me"
+    icon = "fas fa-user"
+    description = "Привет! Я увлекаюсь системами, серверами и разработкой на Python и Java. Я студент 1-го курса — изучаю и практикуюсь в создании телеграм-ботов и маленьких сайтов."
+
+  [params.experience]
+    title = "Experiences"
+    icon = "fas fa-briefcase"
+    [[params.experience.list]]
+      position = "Java Junior"
+      dates = "2024 - Present"
+      company = "Self-study / personal projects"
+      details = "Начальные учебные проекты и эксперименты с Java."
+    [[params.experience.list]]
+      position = "Python Junior"
+      dates = "2024 - Present"
+      company = "Self-study / personal projects"
+      details = "Разработка Telegram-ботов и небольших веб-проектов."
+    [[params.experience.list]]
+      position = "Linux (learner)"
+      dates = "2024 - Present"
+      company = "Self-study"
+      details = "Изучаю администрирование и работу с серверами."
+
+  [params.education]
+    title = "Education"
+    icon = "fas fa-graduation-cap"
+    [[params.education.list]]
+      degree = "Undergraduate (1st year)"
+      college = "University"
+      dates = "2025 - Present"
+
+  [params.publication]
+    title = "Publications"
+    icon = "fas fa-book"
+    format = ["date", "title", "authors", "journal"]
+    types = ["Journal Articles", "Proceedings"]
+    list = []
+
+  [params.project]
+    title = "Projects"
+    icon = "fas fa-project-diagram"
+    [[params.project.list]]
+      title = "Telegram bots"
+      url = "#"
+      description = "Несколько телеграм-ботов для автоматизации и развлечений."
+    [[params.project.list]]
+      title = "Small websites"
+      url = "#"
+      description = "Учебные небольшие сайты и мини-сервисы."
+
+  [params.skill]
+    title = "Skills"
+    panelId = "skill-panel"
+    icon = "fas fa-cogs"
+    [[params.skill.list]]
+      skill = "Python"
+      skillrating = 30
+    [[params.skill.list]]
+      skill = "Java"
+      skillrating = 23
+    [[params.skill.list]]
+      skill = "Linux"
+      skillrating = 50
+
+  [params.hobby]
+    title = "Hobbies"
+    icon = "fas fa-gamepad"
+    [[params.hobby.list]]
+      hobby = "Изучение Linux и систем"
+    [[params.hobby.list]]
+      hobby = "Разработка ботов и небольших проектов"
+    [[params.hobby.list]]
+      hobby = "Gaming — Dead Cells, The Witcher 3"

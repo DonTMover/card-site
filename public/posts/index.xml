@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Мой сайт на Hugo</title>
+    <title>Posts on DonTMover</title>
     <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Мой сайт на Hugo</description>
+    <description>Recent content in Posts on DonTMover</description>
     <generator>Hugo</generator>
     <language>ru-ru</language>
     <lastBuildDate>Fri, 03 Oct 2025 18:07:34 +0300</lastBuildDate>
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Fri, 03 Oct 2025 18:07:34 +0300</pubDate>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;h1 id=&#34;first-post-on-hugo&#34;&gt;First Post on Hugo&lt;/h1&gt;&#xA;&lt;p&gt;qq всем&lt;/p&gt;</description>
+      <description></description>
     </item>
   </channel>
 </rss>
