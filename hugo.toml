@@ -3,6 +3,9 @@ languageCode = "ru-ru"
 title = "DonTMover"
 theme = "aafu"
 
+relativeURLs = true
+canonifyURLs = false
+
 [params]
   author = "DonTMover"
   description = "Личный профиль и портфолио"
